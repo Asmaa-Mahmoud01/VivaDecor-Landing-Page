@@ -5,15 +5,17 @@
 body{
     font-family: "Inter", serif;
 }
+.btn{
+    background-color: var(--main-color);
+    border-radius: 4px;
+    font-weight: 500;
+}
 .btn:hover{
     background-color: var(--sec-color);
 }
 /* start nav */
 nav .navbar-collapse button{
-    background-color: var(--main-color);
     font-size: 19px;
-    font-weight: 500;
-    border-radius: 4px;
 }
 nav .navbar-collapse ul li a{
     font-size: 22px;
@@ -42,10 +44,7 @@ nav .navbar-collapse ul li a:not(.active){
     width: 435px;
 }
 .hero-section button{
-    background-color: var(--main-color);
     font-size: 24px;
-    font-weight: 500;
-    border-radius: 4px;
 }
 .hero-section .counts .count p{
     font-size: 60px;
@@ -95,3 +94,29 @@ nav .navbar-collapse ul li a:not(.active){
     color: var(--sec-color);
 } 
 /* end services-section */
+/* start designing */
+.desining .title{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 70.19px;
+    color: var(--main-color);
+}
+.desining .content{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 39.65px;
+    color: var(--sec-color);
+}
+.more-designs{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 39.65px;
+    color: var(--main-color);
+    border-width:  1px;
+    border-color: transparent transparent #DADADA transparent;
+    border-style: solid;
+}
+.desining .btn{
+    font-size: 20px;
+}
+/* end designing */
