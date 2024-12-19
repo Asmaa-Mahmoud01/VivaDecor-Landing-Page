@@ -149,3 +149,87 @@ nav .navbar-collapse ul li a:not(.active){
     color: var(--sec-color);
 }
 /* end designing step */
+/* start Testamonials-section */
+.Testamonials-section .main-title{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 70.19px;
+}
+.testamonial-cards{
+    position: absolute;
+    left: 24px;
+    bottom: -56px;
+    width: calc(100% - 24px);
+    margin: 0;
+}
+.testamonial-cards .arrows span {
+    background-color: #F1F1F1;
+}
+.testamonial-cards .arrows span i{
+    font-size: 30px;
+    color: #464646;
+}
+.testamonial-cards .test-card{
+    background-color: var(--main-color);
+}
+.testamonial-cards .main-card, 
+.testamonial-cards .test-card{
+    border-radius: 4px;
+}
+.testamonial-cards .test-card span{
+    font-family: math;
+    font-size: 140px;
+    font-weight: 500;
+    line-height: 70px;
+}
+.testamonial-cards .test-card .test-cont{
+    font-size: 19px;
+    font-weight: 500;
+}
+.testamonial-cards .test-card .name{
+    font-size: 19px;
+    font-weight: 600;
+}
+.testamonial-cards .test-card .place{
+    font-size: 18px;
+    font-weight: 500;
+}
+@media (min-width:992px) and (max-width:1200px) {
+    .testamonial-cards {
+            position: absolute;
+            font-size: 17px;
+            font-weight: 600;
+            top: 0;
+            bottom: 0;
+        }
+}
+@media (max-width:1200px) {
+    .testamonial-cards .card2 {
+            display: none;
+        }
+}
+@media (max-width:992px) {
+    .testamonial-cards {
+            position:relative;
+            font-size: 20px;
+            font-weight: 600;
+            flex-direction: column-reverse;
+            gap: 10px;
+            bottom: unset;
+            left: unset;
+            margin: 0 auto;
+        }
+        .testamonial-cards .test-card .test-cont {
+            font-size: 16px;
+        }
+    
+        .testamonial-cards .test-card .name {
+            font-size: 16px;
+        }
+    
+        .testamonial-cards .test-card .place {
+            font-size: 15px;
+        }
+}
+
+/* end Testamonials-section */
