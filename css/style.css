@@ -1,0 +1,72 @@
+:root{
+    --main-color:#1F1F1F;
+    --sec-color:#545454;
+}
+body{
+    font-family: "Inter", serif;
+}
+.btn:hover{
+    background-color: var(--sec-color);
+}
+/* start nav */
+nav .navbar-collapse button{
+    background-color: var(--main-color);
+    font-size: 19px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+nav .navbar-collapse ul li a{
+    font-size: 22px;
+}
+nav .navbar-collapse ul li a:not(.active){
+    color: var(--sec-color);
+}
+.navbar-nav .nav-link.active{
+    color: var(--main-color);
+}
+/* end nav */
+/* start hero-section */
+.hero-section .title{
+    color: var(--main-color);
+    font-size: 99px;
+    font-weight: 500;
+}
+.hero-section .content{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 42px;
+    color: var(--sec-color);
+}
+.hero-section .top-img{
+    height: 425px;
+    width: 435px;
+}
+.hero-section button{
+    background-color: var(--main-color);
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+.hero-section .counts .count p{
+    font-size: 60px;
+    font-weight: 400;
+    color: var(--sec-color);
+    margin-bottom: 0;
+}
+.hero-section .counts .count span{
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--sec-color);
+}
+.hero-section .bottom-img::before{
+    content: "";
+    position: absolute;
+    width: 206px;
+    height: 187px;
+    top: -20px;
+    left: 3px;
+    border-radius: 4px 0px 0px 0px;
+    border: 2px solid var(--main-color);
+    z-index: -1;
+}
+/* end hero-section */

@@ -2140,11 +2140,13 @@ progress {
 .form-control[type=file]:not(:disabled):not([readonly]) {
   cursor: pointer;
 }
-/* .form-control:focus {
+.form-control:focus {
   color: var(--bs-body-color);
   background-color: var(--bs-body-bg);
+  border-color: #86b7fe;
   outline: 0;
-} */
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
 .form-control::-webkit-date-and-time-value {
   min-width: 85px;
   height: 1.5em;
@@ -2734,16 +2736,12 @@ textarea.form-control-lg {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color:white;
+  color: var(--bs-body-color);
   text-align: center;
   white-space: nowrap;
-  background-color:#ef683b ;
-  border-top-right-radius: var(--bs-border-radius);
-  border-bottom-right-radius: var(--bs-border-radius);
-}
-.input-group-text:hover{
-  cursor: pointer;
-  background-color:#d5613a ;
+  background-color: var(--bs-tertiary-bg);
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
 }
 
 .input-group-lg > .form-control,
@@ -3060,11 +3058,11 @@ textarea.form-control-lg {
   --bs-btn-bg: #0d6efd;
   --bs-btn-border-color: #0d6efd;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #d5613a;
+  --bs-btn-hover-bg: #0b5ed7;
   --bs-btn-hover-border-color: #0a58ca;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg:#d5613a ;
+  --bs-btn-active-bg: #0a58ca;
   --bs-btn-active-border-color: #0a53be;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
@@ -3968,7 +3966,7 @@ textarea.form-control-lg {
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
   --bs-navbar-toggler-font-size: 1.25rem;
-  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
   --bs-navbar-toggler-border-radius: var(--bs-border-radius);
   --bs-navbar-toggler-focus-width: 0.25rem;
@@ -4046,8 +4044,9 @@ textarea.form-control-lg {
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
   font-size: var(--bs-navbar-toggler-font-size);
   line-height: 1;
-  border: 1px solid white;  
+  color: var(--bs-navbar-color);
   background-color: transparent;
+  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
   border-radius: var(--bs-navbar-toggler-border-radius);
   transition: var(--bs-navbar-toggler-transition);
 }
@@ -4062,7 +4061,7 @@ textarea.form-control-lg {
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
-  border: 2px solid white;
+  box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width);
 }
 
 .navbar-toggler-icon {
