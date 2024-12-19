@@ -70,3 +70,28 @@ nav .navbar-collapse ul li a:not(.active){
     z-index: -1;
 }
 /* end hero-section */
+/* start services-section */
+.services span{
+    height: 3px;
+    width: 90px;
+    background-color: var(--main-color);
+}
+.services .s-title{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 70.19px;
+    color: var(--main-color);
+}
+.services .s-cards .s-card .card-title{
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 36.31px;
+    color: var(--main-color);
+}
+.services .s-cards .s-card .card-content{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 36.34px;
+    color: var(--sec-color);
+}
+/* end services-section */
