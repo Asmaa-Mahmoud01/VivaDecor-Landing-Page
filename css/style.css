@@ -166,7 +166,7 @@ nav .navbar-collapse ul li a:not(.active){
     background-color: #F1F1F1;
 }
 .testamonial-cards .arrows span i{
-    font-size: 30px;
+    font-size: 25px;
     color: #464646;
 }
 .testamonial-cards .test-card{
@@ -200,7 +200,7 @@ nav .navbar-collapse ul li a:not(.active){
             font-size: 17px;
             font-weight: 600;
             top: 0;
-            bottom: 0;
+            bottom:0;
         }
 }
 @media (max-width:1200px) {
@@ -231,5 +231,47 @@ nav .navbar-collapse ul li a:not(.active){
             font-size: 15px;
         }
 }
-
 /* end Testamonials-section */
+/* start Newsletter section */
+.newsletter .main .title{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 70.19px;
+    color: var(--main-color);
+}
+.newsletter .main .content{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 39.65px;
+    color: var(--sec-color);
+}
+.newsletter  .subscribe{
+    border-radius: 4px;
+    box-shadow: 0px 10px 100px 0px #00000024;
+    bottom: -72px;
+}
+.newsletter  .subscribe i{
+    font-size: 17px;
+    color: #8C8C8C;
+}
+.newsletter .subscribe div{
+    width: auto;
+}
+.newsletter  .subscribe input{
+    border: none;
+    outline: none;
+    color: #8C8C8C;
+    font-weight: 500;
+    font-size: 17px;
+}
+@media (min-width:576px) {
+    .newsletter .subscribe div {
+            width:100%;
+        }
+}
+@media (max-width:576px) {
+    .newsletter .subscribe {
+            width: fit-content;
+        }
+}
+/* end Newsletter section */
